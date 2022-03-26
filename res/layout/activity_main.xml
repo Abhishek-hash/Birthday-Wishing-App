@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:fontFamily="cursive"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/enter_your_name"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/enter_name"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="60dp"
+        android:hint="@string/name"
+        android:autofillHints="Name" />
+
+    <Button
+        android:id="@+id/create_card_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/white"
+        android:onClick="createBirthdayCard"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/create_birthday_card" />
+
+</LinearLayout>
